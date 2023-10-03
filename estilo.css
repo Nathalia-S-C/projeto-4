@@ -1,0 +1,149 @@
+html{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #BF681B;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #0D0D0D;
+}
+
+.header_logo{
+    width: 8em;
+    height: auto;
+}
+
+#hamburguer{
+    background-color: #BF681B;
+    color: #0D0D0D;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+
+}
+
+.header_nav{
+    background-color: #0D0D0D;
+    display: none;
+}
+
+.header_nav.show{
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #BF681B;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, #BF681B, #FFFFFF 50%);
+    color: #0D0D0D;
+}
+
+.fundo_main{
+   background-image: url(imagens/alinkbetweenworlds.jpg);
+   height: 70vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: right 10;
+   display: block;
+   width: auto;
+}
+
+.footer{
+    display: flex;
+    /* height: .8em; */
+    width: 4em;
+    flex-direction: column;
+    margin: auto auto;
+    gap: .8em;
+    padding: .8em;
+}
+
+.tamanho{
+    width: 3.0em;
+}
+
+.tamanho:hover{
+    transform: scale(1.1);
+}
+
+.texto{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+
+@media screen and (min-width:48em){
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0D0D0D;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover{
+        background-color: #BF681B;
+        color: #FFFFFF;
+    }
+
+    .fundo_main{
+        height: 100vh;
+        background-position: auto center;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        height: 3em;
+        justify-content: center;
+        padding: 2em;
+    }
+}
