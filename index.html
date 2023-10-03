@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13 ♥</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="imagens/zelda.png">
+</head>
+<body>
+    
+    <header class="header">
+        <img src="imagens/linkbetweenworld-logo.png" alt="" class="header_logo">
+
+        <span id="hamburguer" class="material-symbols-rounded">
+            menu
+        </span>
+
+        <nav id="itens_menu" class="header_nav">
+            <ul>
+                <li><a href="#">Menu 01</a></li>
+                <li><a href="#">Menu 02</a></li>
+                <li><a href="#">Menu 03</a></li>
+                <li><a href="#">Menu 04</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens_menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer (){
+            if(itens_menu.style.display == 'block'){
+                itens_menu.classList.remove('show');
+            }else{
+                itens_menu.classList.toggle('show');
+            }
+        }
+    </script>
+
+    <main>
+        <section class="fundo_main"></section>
+    </main>
+
+    <footer>
+
+        <div class="footer">
+
+            <div></div>
+            <a href="#"> <img src="imagens/icones/whatsapp.png" alt="icone do whatsapp" class="tamanho"></a>
+
+            <div></div>
+            <a href="#"> <img src="imagens/icones/facebook.png" alt="facebook logo" class="tamanho"></a>
+
+            <div></div>
+            <a href="#"> <img src="imagens/icones/instagram.png" alt="instagram logo" class="tamanho"></a>
+
+            <div></div>
+            <a href="#"> <img src="imagens/icones/discordia.png" alt="discord logo" class="tamanho"></a>
+
+            <div></div>
+            <a href="#"> <img src="imagens/icones/github.png" alt="github logo" class="tamanho"></a>
+
+        </div>
+
+        <p class="texto">♥ Elas na tech 2023 ♥</p>
+        
+    </footer>
+
+</body>
+</html>
